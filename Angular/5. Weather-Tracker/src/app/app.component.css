@@ -1,0 +1,34 @@
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+    /* height: 100vh; */
+}
+.subDiv2{
+    position: relative;
+    height: 50vh;
+}
+.imgDiv{
+    position:absolute;
+    right: 0;
+    top: 220px;
+}
+.listClass{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    font-size: large;
+    font-family: fantasy;
+}
+.listDiv{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start;
+    justify-content: flex-start; */
+    flex: 0;
+    /* position: relative; */
+    /* left: 15px; */
+}

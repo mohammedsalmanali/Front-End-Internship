@@ -1,0 +1,95 @@
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 3px;
+    width: 110px;
+    background-color:#6B0711;
+  }
+  
+  h2 {
+    font-size: 50px;
+    text-align: center;
+  font-family: Trebuchet MS;
+  
+  
+  color: yellow;
+  opacity: 0.9;
+  padding: 15px;
+  }
+  
+  body {background-color: #215cb8;
+  }    
+  
+  
+  
+  
+  
+  
+  #generateButton {
+      border: 1px solid black;
+      border: double;
+      color:#eeeee4;
+      background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+      padding: 10px 20px;
+      border-radius: 12px;
+      box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+      font-family:  "Open Sans", sans-serif;
+      line-height: 1;
+      font-weight: 500;
+    margin-top: 1.5rem;
+    position: absolute;
+    left: 780px;
+    top: 145px;
+  
+  }
+  #generateButton:hover {
+      background: #f44c0e;
+      
+  }
+  
+  #textBox {
+    padding: 20px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #fd1d7c;
+    color: #eeeee4;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+    position: absolute;
+    width: 18%;
+    height: 5px;
+    top: 168px;
+    left: 440px;
+    font-size: 15px;
+  }
+  
+  ::placeholder{  
+    color: white;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  #grid{
+    background-color: #f89b9e;
+  background-image: linear-gradient(315deg, #f89b9e 0%, #c9d9ff 74%);
+  background: hsla(0, 100%, 70%, 0.3);
+  position: absolute;
+  left: 50px;
+  right: 50px;
+  top: 285px;
+  padding-top: 50px;  
+  padding-bottom: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 12px;
+  }
+  
+  #displayBox{
+      position: absolute;
+      left: 100px;
+      top:300px;
+  }
+
+  .text{
+      color: #eeeee4;
+  }

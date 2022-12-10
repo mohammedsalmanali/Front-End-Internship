@@ -1,0 +1,64 @@
+<div class="mainDiv">
+  <div class="subDiv1">
+    <p-dropdown
+      [options]="keralaDistricts"
+      [(ngModel)]="singleDistrict"
+      (click)="selectDistrict()"
+      [placeholder]="singleDistrict?.name"
+      optionLabel="name"
+      [showClear]="true"
+    ></p-dropdown>
+  </div>
+  <div class="subDiv2">
+    <p-card
+      [header]="wheatherDetails?.name"
+      [subheader]="wheatherDetails?.weather[0]?.description"
+      [style]="{ width: '360px', height: '100px' }"
+      styleClass="p-card-shadow"
+    >
+      <ng-template pTemplate="header">
+        <p-gmap
+          #gmap
+          (onMapReady)="setMap($event)"
+          [options]="options"
+          [overlays]="overlays"
+          [style]="{ width: '100%', height: '220px' }"
+        ></p-gmap>
+      </ng-template>
+      <div class="imgDiv">
+        <img
+          style="height: 100px; width: 100px"
+          src="http://openweathermap.org/img/w/{{
+            wheatherDetails.weather[0].icon
+          }}.png"
+        />
+      </div>
+
+      <div class="listDiv">
+        <div class="listClass">
+          <li>Humidity</li>
+          <label>{{ wheatherDetails.main.humidity }}</label>
+        </div>
+        <div class="listClass">
+          <li>Pressure</li>
+          <label>{{ wheatherDetails.main.pressure }}</label>
+        </div>
+        <div class="listClass">
+          <li>Max Temperature</li>
+          <label>{{ wheatherDetails.main.temp_max }}</label>
+        </div>
+        <div class="listClass">
+          <li>Mix Temperature</li>
+          <label>{{ wheatherDetails.main.temp_min }}</label>
+        </div>
+      </div>
+    </p-card>
+  </div>
+</div>
+
+<!-- <p-gmap #gmap (onMapReady)="setMap($event)" [options]="options" [overlays]="overlays" [style]="{'width':'100%','height':'320px'}" ></p-gmap> -->
+<!-- <button type="button" pButton label="Zoom In" icon="pi pi-plus" (click)="zoomIn(gmap.getMap())" style="margin-right:.25em">zooom</button>
+
+<div>
+  <button type="button" pButton label="Add Marker" icon="pi-plus" (click)="addMarker(gmap)">Addd</button>
+</div> -->
